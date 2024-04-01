@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Archivo";
+  src:
+    url("./assets//fonts/Archivo-VariableFont_wdth\,wght.ttf") format("truetype"),
+    url("./assets/fonts/Archivo-Italic-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+* {
+  font-family: 'Archivo';
+  font-weight: 500;
+}
