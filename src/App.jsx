@@ -1,8 +1,8 @@
+import Layout from "./components/Layout/Layout";
+
 function App() {
   return (
-    <>
-      <h1>Misson</h1>
-    </>
+    <Layout />
   );
 }
 
