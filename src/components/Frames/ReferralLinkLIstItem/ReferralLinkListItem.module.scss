@@ -1,0 +1,37 @@
+.li {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  padding-top: 34px;
+}
+
+.inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageWithTitle {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.title {
+  font-size: 32px;
+  letter-spacing: -0.7px;
+  padding-top: 3px;
+}
+
+.button {
+  border-radius: 99px;
+  padding: 16px 24px;
+  outline: none;
+  border: none;
+  background-color: #1657ff;
+  color: #ffffff;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -19,7 +19,7 @@ function Header() {
                 {HEADER_NAVS.map((item) => (
                   <>
                     {(item.id == 2 || item.id == 4) && (
-                      <div className={cn.linkBlock}>
+                      <div className={cn.linkBlock} key={item.id}>
                         <div className={cn.iconBlock}>{item.icon}</div>
                         <NavLink className={cn.link} to={PATHS.home}>
                           {item.text}
@@ -28,7 +28,7 @@ function Header() {
                     )}
 
                     {item.id == 3 && (
-                      <NavLink to={PATHS.home} className={cn.logo}>
+                      <NavLink to={PATHS.home} className={cn.logo} key={item.id}>
                         {item.icon}
                       </NavLink>
                     )}

@@ -1,0 +1,34 @@
+.li {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 25px 32px 24px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.li:last-of-type {
+  padding-bottom: 16px;
+}
+
+.inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatarWithNickname {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nickname {
+  font-size: 17px;
+  letter-spacing: -0.5px;
+}
+
+.joined {
+  font-size: 17px;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}

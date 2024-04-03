@@ -1,6 +1,8 @@
+import Frames from "../../components/Frames/Frames"
+
 function Home() {
   return (
-    <h1>&nbsp;</h1>
+    <Frames />
   )
 }
 
