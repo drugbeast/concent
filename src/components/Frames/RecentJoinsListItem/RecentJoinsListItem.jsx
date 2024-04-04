@@ -7,7 +7,7 @@ function RecentJoinsListItem({ item }) {
     <div className={cn.li}>
       <div className={cn.inner}>
         <div className={cn.avatarWithNickname}>
-          <img src={avatar} />
+          <img src={avatar} className={cn.avatar} />
           <span className={cn.nickname}>{nickname}</span>
         </div>
         <div className={cn.joined}>{joined}</div>

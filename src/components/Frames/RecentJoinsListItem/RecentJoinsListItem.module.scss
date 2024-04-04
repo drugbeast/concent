@@ -15,6 +15,12 @@
   justify-content: space-between;
 }
 
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
 .avatarWithNickname {
   display: flex;
   align-items: center;

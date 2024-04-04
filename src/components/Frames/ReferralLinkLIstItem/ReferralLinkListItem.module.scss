@@ -17,6 +17,27 @@
   gap: 26px;
 }
 
+.image {
+  width: 64px;
+  height: 64px;
+}
+
+.imageContainer {
+  background-color: #000000;
+  border-radius: 100%;
+  padding: 8px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image.x {
+  width: 30px;
+  height: 30px;
+}
+
 .title {
   font-size: 32px;
   letter-spacing: -0.7px;

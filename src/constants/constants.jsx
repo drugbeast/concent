@@ -14,6 +14,10 @@ import {
   SilverSurfer,
   AceRunner,
   GalacticGuide,
+  AIModelsFooter,
+  DocsFooter,
+  InfrastructureFooter,
+  Web3Footer,
 } from "./index";
 
 export const PATHS = {
@@ -109,3 +113,84 @@ export const RECENT_JOINS_USERS_LIST = [
     joined: "Nov 32, 2023",
   },
 ];
+
+export const POINTS_BOARD_TITLE = "Points Board";
+
+export const POINTS_BOARD_BUTTONS = [
+  {
+    id: 1,
+    text: "Leaderboard",
+  },
+  {
+    id: 2,
+    text: "My Points",
+  },
+  {
+    id: 3,
+    text: "My Referrals",
+  },
+];
+
+export const LEADERBOARD_HEADER_TITLES = [
+  { id: 1, text: "Rank" },
+  { id: 2, text: "Name" },
+  { id: 3, text: "Invited by" },
+  { id: 4, text: "Points" },
+];
+
+export const LEADERBOARD_ITEMS = [
+  {
+    id: 1,
+    rank: 1,
+    name: "AceRunner",
+    avatar: AceRunner,
+    invitedBy: "GalacticGuide",
+    invitedByAvatar: GalacticGuide,
+    points: 9999000
+  }
+]
+
+export const FOOTER_NAVIGATION_TITLE = "Navigation";
+
+export const FOOTER_NAVS = [
+  {
+    id: 1,
+    text: "AI Models",
+    icon: <AIModelsFooter />,
+  },
+  {
+    id: 2,
+    text: "Web-3",
+    icon: <Web3Footer />,
+  },
+  {
+    id: 3,
+    text: "Infrastructure",
+    icon: <InfrastructureFooter />,
+  },
+  {
+    id: 4,
+    text: "Docs",
+    icon: <DocsFooter />,
+  },
+];
+
+export const QR_AND_SOCIALS_TITLE =
+  "Scan the QR code to join our Discord community";
+
+export const SOCIALS_LIST_TITLE = "Socials";
+
+export const SOCIALS_LIST = [
+  { id: 1, text: "X (Twitter)" },
+  { id: 2, text: "Telegram" },
+  {
+    id: 3,
+    text: "Discord",
+  },
+];
+
+export const SIERRAAI_FOOTER_TEXT = "Sierra AI, 2024";
+
+export const PRIVACY_POLICY_LINK = "Privacy Policy";
+
+export const TERMS_OF_USE_LINK = "Terms of Use";

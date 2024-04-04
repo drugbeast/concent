@@ -7,7 +7,12 @@ function ReferralLinkListItem({ item }) {
     <div className={cn.li}>
       <div className={cn.inner}>
         <div className={cn.imageWithTitle}>
-          <img src={image} />
+          <div className={title.includes("X") ? cn.imageContainer : ""}>
+            <img
+              src={image}
+              className={title.includes("X") ? `${cn.x} ${cn.image}` : cn.image}
+            />
+          </div>
           <span className={cn.title}>{title}</span>
         </div>
         <button className={cn.button}>
