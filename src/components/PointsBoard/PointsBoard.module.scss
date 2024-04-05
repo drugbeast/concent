@@ -26,10 +26,16 @@
 }
 
 .button {
-  background-color: #000000;
+  border: 1px solid rgba(225, 229, 240, 1);
+  color: #000000;
+  background-color: #ffffff;
   padding: 18px 24px;
-  color: #ffffff;
   outline: none;
-  border: none;
   border-radius: 99px;
+}
+
+.button.active {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
 }

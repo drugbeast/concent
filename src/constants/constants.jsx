@@ -135,12 +135,27 @@ export const POINTS_BOARD_BUTTONS = [
     id: 3,
     text: "My Referrals",
   },
+  { id: 4, text: "No Points" },
+  { id: 5, text: "No Referrals" },
 ];
 
 export const LEADERBOARD_HEADER_TITLES = [
   { id: 1, text: "Rank" },
   { id: 2, text: "Name" },
   { id: 3, text: "Invited by" },
+  { id: 4, text: "Points" },
+];
+
+export const MY_POINTS_HEADER_TITLES = [
+  { id: 1, text: "Timestamp" },
+  { id: 2, text: "Source" },
+  { id: 3, text: "Points" },
+];
+
+export const MY_REFERRALS_HEADER_TITLES = [
+  { id: 1, text: "Joined" },
+  { id: 2, text: "Name" },
+  { id: 3, text: "Wallet" },
   { id: 4, text: "Points" },
 ];
 
@@ -152,7 +167,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: AceRunner,
     invitedBy: "GalacticGuide",
     invitedByAvatar: GalacticGuide,
-    points: "9 999 000"
+    points: "9 999 000",
   },
   {
     id: 2,
@@ -161,7 +176,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: PixelPioneer,
     invitedBy: "",
     invitedByAvatar: "",
-    points: "8 999 000"
+    points: "8 999 000",
   },
   {
     id: 3,
@@ -170,7 +185,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: CodeMaster,
     invitedBy: "AceRunner",
     invitedByAvatar: AceRunner,
-    points: "909 000"
+    points: "909 000",
   },
   {
     id: 4,
@@ -179,7 +194,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: StarGazer,
     invitedBy: "QuantumLeap",
     invitedByAvatar: QuantumLeap,
-    points: "90 000"
+    points: "90 000",
   },
   {
     id: 5,
@@ -188,7 +203,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: QuantumLeap,
     invitedBy: "",
     invitedByAvatar: "",
-    points: "89 000"
+    points: "89 000",
   },
   {
     id: 6,
@@ -197,7 +212,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: SilverSurfer,
     invitedBy: "",
     invitedByAvatar: "",
-    points: "84 000"
+    points: "84 000",
   },
   {
     id: 7,
@@ -206,7 +221,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: MysteryMind,
     invitedBy: "SilverSurfer",
     invitedByAvatar: SilverSurfer,
-    points: "80 000"
+    points: "80 000",
   },
   {
     id: 8,
@@ -215,7 +230,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: DigitalDruid,
     invitedBy: "",
     invitedByAvatar: "",
-    points: "72 000"
+    points: "72 000",
   },
   {
     id: 9,
@@ -224,7 +239,7 @@ export const LEADERBOARD_ITEMS = [
     avatar: NovaKnight,
     invitedBy: "DigitalDruid",
     invitedByAvatar: DigitalDruid,
-    points: "71 000"
+    points: "71 000",
   },
   {
     id: 10,
@@ -233,9 +248,60 @@ export const LEADERBOARD_ITEMS = [
     avatar: CircuitSage,
     invitedBy: "NovaKnight",
     invitedByAvatar: NovaKnight,
-    points: "0"
+    points: "0",
   },
-]
+];
+
+export const MY_POINTS_ITEMS = [
+  {
+    id: 1,
+    timestamp: "1 min. ago",
+    source: "Referral @CircuitSage",
+    sourceIcon: CircuitSage,
+    points: "100",
+  },
+  {
+    id: 2,
+    timestamp: "Yesterday",
+    source: "Joining Discord",
+    sourceIcon: Discord,
+    points: "100",
+  },
+  {
+    id: 3,
+    timestamp: "Jan 23",
+    source: "Following X",
+    sourceIcon: X,
+    points: "100",
+  },
+];
+
+export const MY_REFERRALS_ITEMS = [
+  {
+    id: 1,
+    joined: "1 min. ago",
+    name: "CircuitSage",
+    avatar: CircuitSage,
+    wallet: "0x000...000",
+    points: "100",
+  },
+  {
+    id: 2,
+    joined: "Yesterday",
+    name: "NovaKnight",
+    avatar: NovaKnight,
+    wallet: "0x000...000",
+    points: "100",
+  },
+  {
+    id: 3,
+    joined: "Jan 23",
+    name: "SilverSurfer",
+    avatar: SilverSurfer,
+    wallet: "0x000...000",
+    points: "100",
+  },
+];
 
 export const FOOTER_NAVIGATION_TITLE = "Navigation";
 

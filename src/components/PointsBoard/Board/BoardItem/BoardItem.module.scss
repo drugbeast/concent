@@ -36,14 +36,17 @@
 }
 
 .points {
-  width: 7%;
   display: flex;
   gap: 8px;
   align-items: center;
   justify-content: flex-end;
 }
 
-.avatar, .invitedByAvatar {
+.points.leaderboard {
+  width: 7%;
+}
+
+.avatar, .invitedByAvatar, .sourceIcon {
   width: 32px;
   height: 32px;
   border-radius: 100%;
@@ -57,4 +60,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.timestamp {
+  width: 15.6%;
+  display: flex;
+  align-items: center;
+}
+
+.source {
+  width: 80.75%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 8px;
+}
+
+.points.mypoints{
+  width: 3.65%;
+}
+
+.sourceIconWrapper {
+  width: 32px;
+  height: 32px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 8px;
+}
+
+.sourceIconWrapper .sourceIcon{
+  width: 100%;
+  height: 100%;
+}
+
+.joined {
+  width: 15.5%;
+  display: flex;
+  align-items: center;
+}
+
+.referral {
+  width: 34%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 8px;
+}
+
+.wallet {
+  width: 46.8%;
+  align-items: center;
+  display: flex;
+  padding-left: 9px;
+}
+
+.points.myreferrals {
+  width: 3.7%;
 }
