@@ -1,34 +1,29 @@
+@import "../../constants/reusable";
+
 .header {
   padding-top: 30px;
 }
 
 .inner {
-  display: flex;
-  justify-content: center;
+  @include flexblock($justify: center);
 }
 
 .navInner {
-  display: flex;
-  gap: 112px;
+  @include flexblock($gap: 112px);
 }
 
 .linkBlock {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  @include flexblock($align: center, $gap: 8px);
 }
 
 .navsWithLogoInCenter {
-  display: flex;
-  gap: 96px;
+  @include flexblock($gap: 96px);
 }
 
 .iconBlock {
-  display: flex;
-  align-items: center;
+  @include flexblock($align: center);
 }
 
 .link {
   text-decoration: none;
-  color: #000000;
 }

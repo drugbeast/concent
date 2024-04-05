@@ -3,6 +3,7 @@ import Logo from "../../assets/images/logo.svg?react";
 import {
   FOOTER_NAVIGATION_TITLE,
   FOOTER_NAVS,
+  PATHS,
   PRIVACY_POLICY_LINK,
   QR_AND_SOCIALS_TITLE,
   SIERRAAI_FOOTER_TEXT,
@@ -11,6 +12,7 @@ import {
   TERMS_OF_USE_LINK,
 } from "../../constants/constants";
 import QR from "../../assets/images/footer-icons/QR.svg?react";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,9 +26,9 @@ function Footer() {
         <div className={cn.title}>{FOOTER_NAVIGATION_TITLE}</div>
         <div className={cn.navsList}>
           {FOOTER_NAVS.map((item) => (
-            <div className={cn.li} key={item.id}>
+            <NavLink className={cn.li} key={item.id} to={PATHS.home}>
               {item.icon} {item.text}
-            </div>
+            </NavLink>
           ))}
         </div>
       </section>
@@ -37,9 +39,9 @@ function Footer() {
             <div className={cn.socialsListTitle}>{SOCIALS_LIST_TITLE}</div>
             <div className={cn.list}>
               {SOCIALS_LIST.map((item) => (
-                <div className={cn.socialsListItem} key={item.id}>
+                <NavLink className={cn.socialsListItem} key={item.id} to={PATHS.home}>
                   {item.text}
-                </div>
+                </NavLink>
               ))}
             </div>
           </div>
@@ -50,8 +52,8 @@ function Footer() {
             <span className={cn.sierra}>{SIERRAAI_FOOTER_TEXT}</span>
           </div>
           <div className={cn.blockWithoutQr}>
-            <span className={cn.privacyPolicy}>{PRIVACY_POLICY_LINK}</span>
-            <span className={cn.termsOfUse}>{TERMS_OF_USE_LINK}</span>
+            <NavLink className={cn.privacyPolicy} to={PATHS.home}>{PRIVACY_POLICY_LINK}</NavLink>
+            <NavLink className={cn.termsOfUse} to={PATHS.home}>{TERMS_OF_USE_LINK}</NavLink>
           </div>
         </div>
       </section>

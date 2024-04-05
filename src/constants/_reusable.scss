@@ -1,0 +1,47 @@
+/* COLORS */
+$black-100: rgba(0, 0, 0, 1);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-10: rgba(0, 0, 0, 0.1);
+$white-100: rgba(255, 255, 255, 1);
+$blue-100: rgba(22, 87, 255, 1);
+$gray-40: rgba(225, 229, 240, 0.4);
+$gray-100: rgba(225, 229, 240, 1);
+$yellow-100: rgba(250, 255, 0, 1);
+
+/* FONTS */
+$main-font: "SuisseIntl";
+$titles-font: "RightGrotesk";
+
+@mixin flexblock($justify: flex-start, $align: stretch, $gap: 0px, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+  flex-direction: $direction;
+}
+
+@mixin text($size: 17px, $spacing: -0.5px, $color: $black-100, $font: $main-font, $weight: 450) {
+  letter-spacing: $spacing;
+  font-size: $size;
+  color: $color;
+  font-family: $font;
+  font-weight: $weight;
+}
+
+@mixin border($top: 0px, $right: 0px, $bottom: 0px, $left: 0px, $style: solid, $color: $black-10) {
+  border-top: $top;
+  border-right: $right;
+  border-bottom: $bottom;
+  border-left: $left;
+  border-style: $style;
+  border-color: $color;
+}
+
+@mixin imageContainer($width, $height, $padding, $bgColor) {
+  background-color: $bgColor;
+  border-radius: 100%;
+  padding: $padding;
+  width: $width;
+  height: $height;
+  @include flexblock($align: center, $justify: center);
+}

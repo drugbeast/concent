@@ -1,9 +1,9 @@
+@import "../../constants/reusable";
+
 .frames {
-  padding-top: 80px;
+  padding-top: 88px;
 }
 
 .inner {
-  display: flex;
-  gap: 80px;
-  justify-content: space-between;
+  @include flexblock($gap: 80px, $justify: space-between);
 }

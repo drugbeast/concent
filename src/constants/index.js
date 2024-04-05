@@ -8,6 +8,9 @@ import Discord from "../assets/images/referral-link/discord.png";
 import Link from "../assets/images/referral-link/link.svg";
 import Share from "../assets/images/referral-link/share.svg?react";
 import Arrow from "../assets/images/referral-link/arrow.svg?react";
+import ShareWhite from "../assets/images/referral-link/share-white.svg?react";
+import ArrowGray from "../assets/images/referral-link/arrow-gray.svg?react";
+import Person from "../assets/images/referral-link/person.svg?react";
 import CircuitSage from "../assets/images/recent-joins/CircuitSage.png";
 import NovaKnight from "../assets/images/recent-joins/NovaKnight.png";
 import SilverSurfer from "../assets/images/recent-joins/SilverSurfer.png";
@@ -35,6 +38,9 @@ export {
   Link,
   Share,
   Arrow,
+  ShareWhite,
+  ArrowGray,
+  Person,
   CircuitSage,
   NovaKnight,
   SilverSurfer,

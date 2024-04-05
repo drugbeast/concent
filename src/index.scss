@@ -1,24 +1,24 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
+@import "./constants/reusable";
 
 @font-face {
-  font-family: "SuisseIntl";
+  font-family: $main-font;
   src:
     url("./assets/fonts/SuisseIntl-Medium.ttf") format("truetype"),
     url("./assets/fonts/SuisseIntl-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "RightGrotesk";
+  font-family: $titles-font;
   src: url("./assets/fonts/RightGrotesk-Medium.otf") format("opentype");
 }
 
 * {
-  font-family: "SuisseIntl";
-  font-weight: 450;
+  @include text;
 }
 
 body {
-  color: #000000;
+  color: $black-100;
 }
 
 .container {

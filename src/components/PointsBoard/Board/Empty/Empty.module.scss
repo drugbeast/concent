@@ -1,0 +1,31 @@
+@import "../../../../constants/reusable";
+
+.inner {
+  width: 100%;
+  @include flexblock($justify: center);
+  padding: 140px 0;
+}
+
+.content {
+  width: 24%;
+  @include flexblock($direction: column, $align: center);
+}
+
+.imageContainer {
+  @include imageContainer(48px, 48px, 8px, $blue-100);
+}
+
+.imageContainer.person {
+  background-color: $yellow-100;
+}
+
+.title {
+  padding-top: 18px;
+  @include text($size: 32px, $spacing: -1px);
+}
+
+.text {
+  padding-top: 10px;
+  text-align: center;
+  line-height: 23.8px;
+}

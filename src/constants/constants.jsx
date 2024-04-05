@@ -9,6 +9,9 @@ import {
   Link,
   Share,
   Arrow,
+  ShareWhite,
+  ArrowGray,
+  Person,
   CircuitSage,
   NovaKnight,
   SilverSurfer,
@@ -59,6 +62,8 @@ export const REFERRAL_LINK_TITLEBLOCK_TITLE = "Referral Link";
 export const REFERRAL_LINK_TITLEBLOCK_TEXT =
   "Complete 3 easy steps and start earning points for referrals";
 
+export const BUTTONS_AMOUNT = 3;
+
 export const REFERRAL_LINK_STEPS_LIST = [
   {
     id: 1,
@@ -66,6 +71,8 @@ export const REFERRAL_LINK_STEPS_LIST = [
     title: "Follow us on X",
     buttonText: "Follow",
     buttonIcon: <Arrow />,
+    buttonDisabledIcon: <ArrowGray />,
+    isDisabled: false,
   },
   {
     id: 2,
@@ -73,13 +80,36 @@ export const REFERRAL_LINK_STEPS_LIST = [
     title: "Join our Discord",
     buttonText: "Join",
     buttonIcon: <Arrow />,
+    buttonDisabledIcon: <ArrowGray />,
+    isDisabled: true,
   },
   {
     id: 3,
     image: Link,
     title: "Share your link",
     buttonText: "Share",
-    buttonIcon: <Share />,
+    buttonIcon: <ShareWhite />,
+    buttonDisabledIcon: <Share />,
+    isDisabled: true,
+  },
+];
+
+export const AFTER_STEPS_COPY_LINK = "https://concent.ai/invite/nc0q9r48y4";
+
+export const AFTER_STEPS_COPY_BUTTON_TEXT = "Copy";
+
+export const AFTER_STEPS_UPPER = [
+  {
+    id: 1,
+    icon: <Person />,
+    title: "Earn 100 points per referral",
+    text: "You will earn 25% of everything they earn, and a portion of the points their referrals earn",
+  },
+  {
+    id: 2,
+    icon: <Logo fill="rgba(255, 255, 255, 1)" />,
+    title: "9 990",
+    text: "Available Points",
   },
 ];
 
@@ -302,6 +332,18 @@ export const MY_REFERRALS_ITEMS = [
     points: "100",
   },
 ];
+
+export const NO_POINTS_EMPTY = {
+  icon: <Logo fill="rgba(255, 255, 255, 1)" />,
+  title: "No points yet!",
+  text: "Complete 3 easy steps and start earning points for referrals. Join to Discord and X to earn 200 point",
+};
+
+export const NO_REFERRALS_EMPTY = {
+  icon: <Person />,
+  title: "No referrals yet!",
+  text: "Complete 3 easy steps and start earning points for referrals. Join Discord and follow us on  X to unlock referral link",
+};
 
 export const FOOTER_NAVIGATION_TITLE = "Navigation";
 

@@ -10,22 +10,25 @@ import cn from "./Board.module.scss";
 import BoardHeader from "./BoardHeader/BoardHeader";
 import BoardItem from "./BoardItem/BoardItem";
 import PropTypes from "prop-types";
+import Empty from "./Empty/Empty";
 
 function Board({ type }) {
   return (
     <section className={cn.board}>
-      <BoardHeader
-        titles={
-          type == "Leaderboard"
-            ? LEADERBOARD_HEADER_TITLES
-            : type == "My Points"
-            ? MY_POINTS_HEADER_TITLES
-            : type == "My Referrals"
-            ? MY_REFERRALS_HEADER_TITLES
-            : ""
-        }
-        type={type}
-      />
+      {type != "No Points" && type != "No Referrals" && (
+        <BoardHeader
+          titles={
+            type == "Leaderboard"
+              ? LEADERBOARD_HEADER_TITLES
+              : type == "My Points"
+              ? MY_POINTS_HEADER_TITLES
+              : type == "My Referrals"
+              ? MY_REFERRALS_HEADER_TITLES
+              : ""
+          }
+          type={type}
+        />
+      )}
       {type == "Leaderboard" &&
         LEADERBOARD_ITEMS.map((item) => (
           <BoardItem
@@ -62,6 +65,7 @@ function Board({ type }) {
             type={type}
           />
         ))}
+      {(type == "No Points" || type == "No Referrals") && <Empty type={type} />}
     </section>
   );
 }

@@ -1,20 +1,21 @@
+@import "../../../constants/reusable";
+
 .li {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  @include border($top: 1px);
   padding: 32px;
-  padding-top: 34px;
+}
+
+.li:last-of-type {
+  padding: 29px 32px;
 }
 
 .inner {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexblock($justify: space-between, $align: center);
 }
 
 .imageWithTitle {
-  display: flex;
-  align-items: center;
-  gap: 26px;
+  @include flexblock($align: center, $gap: 28px);
 }
 
 .image {
@@ -23,14 +24,7 @@
 }
 
 .imageContainer {
-  background-color: #000000;
-  border-radius: 100%;
-  padding: 8px;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include imageContainer(64px, 64px, 8px, $black-100);
 }
 
 .image.x {
@@ -39,9 +33,8 @@
 }
 
 .title {
-  font-size: 32px;
-  letter-spacing: -0.7px;
-  padding-top: 3px;
+  @include text($size: 32px, $spacing: -1px);
+  padding-top: 2px;
 }
 
 .button {
@@ -49,10 +42,13 @@
   padding: 16px 24px;
   outline: none;
   border: none;
-  background-color: #1657ff;
-  color: #ffffff;
+  background-color: $blue-100;
+  color: $white-100;
   height: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  @include flexblock($align: center, $gap: 10px);
+}
+
+.button.disabled {
+  color: $black-60;
+  background-color: $gray-40;
 }
