@@ -1,0 +1,60 @@
+.item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item:last-of-type {
+  border-bottom: none;
+}
+
+.inner {
+  display: flex;
+  padding: 24.5px 32px 24px 27px;
+  font-size: 17px;
+  letter-spacing: -0.5px;
+}
+
+.rank {
+  width: 6.25%;
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  width: 43.25%;
+  display: flex;
+  gap: 16px;
+  padding-left: 6px;
+  align-items: center;
+}
+
+.invitedBy {
+  width: 44%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.points {
+  width: 7%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.avatar, .invitedByAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.pointsSymbolWrapper {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(22, 87, 255, 1);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

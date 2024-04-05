@@ -14,6 +14,12 @@ import {
   SilverSurfer,
   AceRunner,
   GalacticGuide,
+  PixelPioneer,
+  DigitalDruid,
+  CodeMaster,
+  StarGazer,
+  QuantumLeap,
+  MysteryMind,
   AIModelsFooter,
   DocsFooter,
   InfrastructureFooter,
@@ -146,8 +152,89 @@ export const LEADERBOARD_ITEMS = [
     avatar: AceRunner,
     invitedBy: "GalacticGuide",
     invitedByAvatar: GalacticGuide,
-    points: 9999000
-  }
+    points: "9 999 000"
+  },
+  {
+    id: 2,
+    rank: 2,
+    name: "PixelPioneer",
+    avatar: PixelPioneer,
+    invitedBy: "",
+    invitedByAvatar: "",
+    points: "8 999 000"
+  },
+  {
+    id: 3,
+    rank: 3,
+    name: "CodeMaster",
+    avatar: CodeMaster,
+    invitedBy: "AceRunner",
+    invitedByAvatar: AceRunner,
+    points: "909 000"
+  },
+  {
+    id: 4,
+    rank: 4,
+    name: "StarGazer",
+    avatar: StarGazer,
+    invitedBy: "QuantumLeap",
+    invitedByAvatar: QuantumLeap,
+    points: "90 000"
+  },
+  {
+    id: 5,
+    rank: 5,
+    name: "QuantumLeap",
+    avatar: QuantumLeap,
+    invitedBy: "",
+    invitedByAvatar: "",
+    points: "89 000"
+  },
+  {
+    id: 6,
+    rank: 6,
+    name: "SilverSurfer",
+    avatar: SilverSurfer,
+    invitedBy: "",
+    invitedByAvatar: "",
+    points: "84 000"
+  },
+  {
+    id: 7,
+    rank: 7,
+    name: "MysteryMind",
+    avatar: MysteryMind,
+    invitedBy: "SilverSurfer",
+    invitedByAvatar: SilverSurfer,
+    points: "80 000"
+  },
+  {
+    id: 8,
+    rank: 8,
+    name: "DigitalDruid",
+    avatar: DigitalDruid,
+    invitedBy: "",
+    invitedByAvatar: "",
+    points: "72 000"
+  },
+  {
+    id: 9,
+    rank: 9,
+    name: "NovaKnight",
+    avatar: NovaKnight,
+    invitedBy: "DigitalDruid",
+    invitedByAvatar: DigitalDruid,
+    points: "71 000"
+  },
+  {
+    id: 10,
+    rank: 10,
+    name: "CircuitSage",
+    avatar: CircuitSage,
+    invitedBy: "NovaKnight",
+    invitedByAvatar: NovaKnight,
+    points: "0"
+  },
 ]
 
 export const FOOTER_NAVIGATION_TITLE = "Navigation";
