@@ -53,12 +53,6 @@
 }
 
 .copyButton {
-  border-radius: 99px;
-  background-color: $blue-100;
-  color: $white-100;
-  padding: 15px 24px;
-  outline: none;
-  border: none;
-  @include flexblock($align: center);
-  gap: 10px;
+  @include button(99px, 15px 24px, $bgColor: $blue-100, $color: $white-100);
+  @include flexblock($align: center, $gap: 10px);
 }

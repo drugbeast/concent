@@ -1,5 +1,7 @@
+@import "../../../../constants/reusable";
+
 .item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $black-10;
 }
 
 .item:last-of-type {
@@ -7,39 +9,31 @@
 }
 
 .inner {
-  display: flex;
+  @include flexblock;
   padding: 24.5px 32px 24px 27px;
-  font-size: 17px;
-  letter-spacing: -0.5px;
 }
 
 .rank {
   width: 6.25%;
-  display: flex;
-  align-items: center;
+  @include flexblock($align: center);
+}
+
+.user, .invitedBy, .source, .referral {
+  @include flexblock($align: center, $gap: 16px);
 }
 
 .user {
   width: 43.25%;
-  display: flex;
-  gap: 16px;
   padding-left: 6px;
-  align-items: center;
 }
 
 .invitedBy {
   width: 44%;
-  display: flex;
-  gap: 16px;
-  align-items: center;
   padding-left: 16px;
 }
 
 .points {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-end;
+  @include flexblock($gap: 8px, $align: center, $justify: flex-end);
 }
 
 .points.leaderboard {
@@ -53,26 +47,16 @@
 }
 
 .pointsSymbolWrapper {
-  width: 24px;
-  height: 24px;
-  background-color: rgba(22, 87, 255, 1);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include imageContainer(24px, 24px, 0px, $blue-100);
 }
 
 .timestamp {
   width: 15.6%;
-  display: flex;
-  align-items: center;
+  @include flexblock($align: center);
 }
 
 .source {
   width: 80.75%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
   padding-left: 8px;
 }
 
@@ -81,14 +65,7 @@
 }
 
 .sourceIconWrapper {
-  width: 32px;
-  height: 32px;
-  background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  padding: 8px;
+  @include imageContainer(32px, 32px, 8px, $black-100);
 }
 
 .sourceIconWrapper .sourceIcon{
@@ -98,23 +75,18 @@
 
 .joined {
   width: 15.5%;
-  display: flex;
-  align-items: center;
+  @include flexblock($align: center);
 }
 
 .referral {
   width: 34%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
   padding-left: 8px;
 }
 
 .wallet {
   width: 46.8%;
-  align-items: center;
-  display: flex;
   padding-left: 9px;
+  @include flexblock($align: center);
 }
 
 .points.myreferrals {

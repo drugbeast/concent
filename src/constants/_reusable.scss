@@ -45,3 +45,12 @@ $titles-font: "RightGrotesk";
   height: $height;
   @include flexblock($align: center, $justify: center);
 }
+
+@mixin button($radius, $padding, $border: none, $bgColor, $color) {
+  border-radius: $radius;
+  padding: $padding;
+  border: $border;
+  background-color: $bgColor;
+  color: $color;
+  outline: none;
+}

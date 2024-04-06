@@ -1,6 +1,8 @@
+@import "../../constants/reusable";
+
 .inner {
-  padding-top: 124px;
-  padding-bottom: 280px;
+  padding-top: 130px;
+  padding-bottom: 278px;
 }
 
 .buttonsAndBoard {
@@ -8,34 +10,24 @@
 }
 
 .title {
-  font-family: "RightGrotesk";
-  font-size: 80px;
   line-height: 72px;
-  letter-spacing: -1.5px;
+  @include text($font: $titles-font, $size: 80px, $spacing: -1.5px);
 }
 
 .buttonsAndBoard {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  @include flexblock($direction: column, $gap: 32px);
 }
 
 .buttons {
-  display: flex;
-  gap: 32px;
+  @include flexblock($gap: 32px);
 }
 
 .button {
-  border: 1px solid rgba(225, 229, 240, 1);
-  color: #000000;
-  background-color: #ffffff;
-  padding: 18px 24px;
-  outline: none;
-  border-radius: 99px;
+  @include button(99px, 18px 24px, 1px solid $gray-100, $white-100, $black-100);
 }
 
 .button.active {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: $black-100;
+  color: $white-100;
   border: none;
 }

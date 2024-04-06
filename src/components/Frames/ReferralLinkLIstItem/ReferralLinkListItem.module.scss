@@ -38,13 +38,8 @@
 }
 
 .button {
-  border-radius: 99px;
-  padding: 16px 24px;
-  outline: none;
-  border: none;
-  background-color: $blue-100;
-  color: $white-100;
   height: fit-content;
+  @include button(99px, 16px 24px, $bgColor: $blue-100, $color: $white-100);
   @include flexblock($align: center, $gap: 10px);
 }
 
