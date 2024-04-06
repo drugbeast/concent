@@ -8,6 +8,7 @@ import {
   AFTER_STEPS_COPY_BUTTON_TEXT,
   AFTER_STEPS_COPY_LINK,
   AFTER_STEPS_UPPER,
+  AFTER_STEPS_TITLEBLOCK_TEXT,
   BUTTONS_AMOUNT,
 } from "../../../constants/constants";
 import Copy from "../../../assets/images/referral-link/copy.svg?react";
@@ -19,7 +20,13 @@ function Frame(props) {
   return (
     <section className={cn.frame}>
       <div className={cn.inner}>
-        <TitleBlock title={title} text={text} type={type} />
+        <TitleBlock
+          title={title}
+          text={
+            currentButton <= BUTTONS_AMOUNT ? text : AFTER_STEPS_TITLEBLOCK_TEXT
+          }
+          type={type}
+        />
         {currentButton <= BUTTONS_AMOUNT && (
           <div className={cn.list}>
             {list.map((item) =>
@@ -39,13 +46,23 @@ function Frame(props) {
         {currentButton > BUTTONS_AMOUNT && (
           <div className={cn.afterSteps}>
             <div className={cn.upper}>
-              {AFTER_STEPS_UPPER.map((item) => (
-                <div className={cn.upperInner} key={item.id}>
-                  <div className={cn.LeftimageContainer}>{item.icon}</div>
-                  <span className={cn.LeftTitle}>{item.title}</span>
-                  <span className={cn.LeftText}>{item.text}</span>
-                </div>
-              ))}
+              <div className={cn.upperInner}>
+                {AFTER_STEPS_UPPER.map((item) => (
+                  <div className={cn.block} key={item.id}>
+                    <div
+                      className={
+                        item.id == 1
+                          ? `${cn.yellow} ${cn.imageContainer}`
+                          : `${cn.blue} ${cn.imageContainer}`
+                      }
+                    >
+                      {item.icon}
+                    </div>
+                    <span className={cn.title}>{item.title}</span>
+                    <span className={cn.text}>{item.text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className={cn.lower}>
               <div className={cn.linkField}>{AFTER_STEPS_COPY_LINK}</div>

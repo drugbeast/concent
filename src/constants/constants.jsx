@@ -94,7 +94,7 @@ export const REFERRAL_LINK_STEPS_LIST = [
   },
 ];
 
-export const AFTER_STEPS_COPY_LINK = "https://concent.ai/invite/nc0q9r48y4";
+export const AFTER_STEPS_COPY_LINK = 'https:/concent.ai/invite/nc0q9r48y4';
 
 export const AFTER_STEPS_COPY_BUTTON_TEXT = "Copy";
 
@@ -112,6 +112,8 @@ export const AFTER_STEPS_UPPER = [
     text: "Available Points",
   },
 ];
+
+export const AFTER_STEPS_TITLEBLOCK_TEXT = "Invite friends to earn points and 25% of their points"
 
 export const RECENT_JOINS_TITLEBLOCK_TITLE = "Recent Joins";
 

@@ -6,3 +6,59 @@
   width: 48%;
   height: fit-content;
 }
+
+.upperInner {
+  padding: 50px 32px;
+  @include border($top: 1px, $bottom: 1px);
+  @include flexblock($gap: 80px);
+}
+
+.block {
+  width: fit-content;
+  @include flexblock($direction: column);
+}
+
+.imageContainer {
+  @include imageContainer(48px, 48px, 8px, $blue-100);
+}
+
+.imageContainer.yellow {
+  background-color: $yellow-100;
+}
+
+.title {
+  font-size: 32px;
+  padding-top: 28px;
+  width: fit-content;
+  @include text($size: 32px, $spacing: -0.9px);
+}
+
+.text {
+  padding-top: 8px;
+  width: 60%;
+  line-height: 23.8px;
+}
+
+.lower {
+  padding: 32px 28px;
+  @include flexblock($gap: 16px);
+}
+
+.linkField {
+  border-radius: 99px;
+  background-color: $gray-40;
+  color: $black-60;
+  width: 82%; 
+  @include flexblock($justify: center, $align: center);
+}
+
+.copyButton {
+  border-radius: 99px;
+  background-color: $blue-100;
+  color: $white-100;
+  padding: 15px 24px;
+  outline: none;
+  border: none;
+  @include flexblock($align: center);
+  gap: 10px;
+}
